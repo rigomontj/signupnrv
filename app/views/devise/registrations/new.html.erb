@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag    'custom' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="all">
+      <div class="center">
+
+        <div class="left">
+          <h1>uniform</h1>
+          <h2>L' inscription devient plus simple</h2>
+            <div id="barre">
+            </div>
+            <div class="list">
+              <ul>
+                <li id="file_image">Un seul formulaire pour toutes les écoles</li>
+                <li id="student_image">Gérez facilement vos candidatures</li>
+                <li id="cloud_image">Stockez vos données scolaires</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="right-up">
+          <h3>Entrez vos identifiants</h2>
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name), :id => "formulaire") do |f| %>
+              <%= devise_error_messages! %>
+
+              <div class="field">
+                <%= f.email_field :email, :class => "email_field", autofocus: true, autocomplete: "email", placeholder: "Adresse email" %>
+              </div>
+
+              <div class="field">
+                <% if @minimum_password_length %>
+                <% end %>
+                <%= f.password_field :password, :class => "password_field", autocomplete: "off", placeholder: "Mot de passe" %>
+              </div>
+
+              <div class="field">
+                <%= f.password_field :password_confirmation, :class => "password_confirmation_field", autocomplete: "off", placeholder: "Confirmation mot de passe" %>
+              </div>
+
+              <div class="actions">
+                <%= f.submit "Inscription", :class => "button" %>
+              </div>
+          </div>
+
+          <div class="right-bottom">
+            <p id="connect"> Se connecter </p>
+          </div>
+      </div>
+    </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.all {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  font-family: 'neovix basic';
+  background: asset-data-url('fond1.jpg')
+}
+
+.center {
+  width: 50%;
+  height: 55%;
+  margin: auto;
+}
+
+.left {
+  width: 55%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #3779DD;
+  float: left;
+  color: white;
+  padding-left: 30px;
+  padding-top: 20px;
+  opacity: 0.9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#barre {
+  height: 1px;
+  width: 100px;
+  background-color: #56C699;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.right-up {
+  width: 45%;
+  height: 80%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-top: 35px;
+  float: right;
+  background-color: white;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-bottom {
+  width: 45%;
+  height: 20%;
+  box-sizing: border-box;
+  background-color: #999DAE;
+  float: right;
+  color: white;
+  border-bottom-right-radius: 5px;
+  display: flex;
+}
+
+
+//* CONTENT *//
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  line-height: 3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 11px;
+  padding-left: 0;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+#file_image {
+  background: asset-data-url('file.png');
+  background-position: 10px 10px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+}
+
+#student_image {
+  background: asset-data-url('student.png');
+  background-position: 10px 10px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+}
+
+#cloud_image {
+  background: asset-data-url('cloud.png');
+  background-position: 10px 10px;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+}
+
+
+#connect {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  margin: auto;
+  }
+
+  //* FORM *//
+
+#formulaire {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.email_field {
+    padding-left: 0;
+    width: 90%;
+    height: 35px;
+    color: #919191;
+    background: asset-data-url('user.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    outline: none;
+    border-top: 1px solid #C7C7C7;
+    border-right: 1px solid #C7C7C7;
+    border-bottom: 0px solid #C7C7C7;
+    border-left: 1px solid #C7C7C7;
+  }
+
+.password_field {
+    padding-left: 0;
+    width: 90%;
+    height: 35px;
+    color: #919191;
+    background: asset-data-url('lock.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #C7C7C7;
+    border-right: 1px solid #C7C7C7;
+    border-bottom: 0px solid #C7C7C7;
+    border-left: 1px solid #C7C7C7;
+    }
+
+.password_confirmation_field {
+    padding-left: 0;
+    width: 90%;
+    height: 35px;
+    color: #919191;
+    background: asset-data-url('lock.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: 1px solid #C7C7C7;
+    }
+
+.button {
+  background-color: #337BE6;
+  color: white;
+  height: 35px;
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  }
+
+  //* LOGGED PAGE *//
+
+#logged {
+  background-color: #3779DD;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+  }
+
+#text_logged {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+#retour {
+  color: white;
+  background-color: #2C50AD;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  }
